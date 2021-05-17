@@ -19,6 +19,9 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
     implementation 'com.github.javaparser:javaparser-symbol-solver-core:3.20.2'
+
+    //local Alloy
+    implementation files('libs/org.alloytools.alloy.dist.jar')
 }
 
 test {

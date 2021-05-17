@@ -8,7 +8,9 @@ build/
 
 # Alloy
 *.als
+/alloy_example_output.xml
 
 
-# Include gradle-wrapper-jar
+# Include specific gradle-wrapper-jar, alloy
 !gradle-wrapper.jar
+!org.alloytools.alloy.dist.jar
