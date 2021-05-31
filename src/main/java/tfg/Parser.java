@@ -25,8 +25,8 @@ import java.util.Objects;
 
 public class Parser {
 
-    private static final String FILE_PATH = "src/main/resources/Tree.java";
-    private static final String OUTPUT_PATH = "outputs/test.als";
+    private static final String FILE_PATH = "src/main/resources/Tree.java";  // Path for source code file
+    private static final String OUTPUT_PATH = "outputs/test.als";  // Path for generated alloy model
 
     public static void main(String[] args) throws Exception {
         CompilationUnit cu = StaticJavaParser.parse((new FileInputStream(FILE_PATH)));
@@ -75,11 +75,11 @@ public class Parser {
                 sol.writeXML("alloy_example_output.xml");
                 //
                 // You can then visualize the XML file by calling this:
-                if (viz==null) {
+                /*if (viz==null) {
                     viz = new VizGUI(false, "alloy_example_output.xml", null);
                 } else {
                     viz.loadXML("alloy_example_output.xml", true);
-                }
+                }*/
             }
         }
 
